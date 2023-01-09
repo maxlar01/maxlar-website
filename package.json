@@ -1,0 +1,36 @@
+{
+  "name": "maxlar-website",
+  "version": "1.0.0",
+  "description": "Mostafa's personal website",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxlar01/maxlar-website.git"
+  },
+  "keywords": [],
+  "author": "Mostafa Rakha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxlar01/maxlar-website/issues"
+  },
+  "homepage": "https://github.com/maxlar01/maxlar-website#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^8.3.3",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-next": "^13.1.1",
+    "prettier": "^2.8.2"
+  }
+}
