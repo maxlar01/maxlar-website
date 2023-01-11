@@ -1,10 +1,30 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue
+} from '@chakra-ui/react'
+import TypewriterComponent from 'typewriter-effect'
+import Section from '../components/section'
 
 const Page = () => {
   return (
     <Container>
-      <Box borderRadius="lg" p={3} mb={6} align="center">
-        Hi, I&apos;m a full-stack engineer based in Malaysia!
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        p={3}
+        mb={6}
+        align="center"
+      >
+        <TypewriterComponent
+          onInit={typewriter => {
+            typewriter
+              .typeString(`Hi, I am a full-stack engineer based in Malaysia!`)
+              .start()
+          }}
+        />
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -15,6 +35,24 @@ const Page = () => {
           <p>Full-Stack Engineer</p>
         </Box>
       </Box>
+      <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
+        <Image
+          borderColor="whiteAlpha.800"
+          borderWidth={2}
+          borderStyle="solid"
+          maxWidth="130px"
+          display="inline-block"
+          borderRadius="full"
+          src="/images/profile_pic.png"
+          alt="Profile Image"
+        />
+      </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <p>Paragraph</p>
+      </Section>
     </Container>
   )
 }

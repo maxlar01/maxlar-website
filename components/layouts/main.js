@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 
 const Main = ({ children, router }) => {
@@ -8,10 +9,12 @@ const Main = ({ children, router }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="icon"
-          href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/319/desktop-computer_1f5a5-fe0f.png"
+          href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/laptop_1f4bb.png"
         />
         <title>Mostafa Rakha - Homepage</title>
       </Head>
+
+      <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
         {children}

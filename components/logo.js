@@ -12,8 +12,32 @@ const LogoBox = styled.span`
   line-height: 20px;
   padding: 10px;
 
+  & img {
+    transition: transform 1s ease-in-out;
+  }
+
   &:hover img {
-    transform: rotate(20deg);
+    transform: rotate(360deg);
   }
 `
-const Logo = () => {}
+const Logo = () => {
+  const laptopImg = `/images/laptop${useColorModeValue('', '-dark')}.png`
+
+  return (
+    <Link href="/">
+      <LogoBox>
+        <Image src={laptopImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily="M PLUS Rounded 1c"
+          fontWeight="bold"
+          ml={3}
+        >
+          Mostafa Rakha
+        </Text>
+      </LogoBox>
+    </Link>
+  )
+}
+
+export default Logo
