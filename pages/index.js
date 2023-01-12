@@ -17,7 +17,12 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
-import { IoLogoTwitter, IoLogoLinkedin, IoLogoGithub } from 'react-icons/io5'
+import {
+  IoLogoTwitter,
+  IoLogoLinkedin,
+  IoLogoGithub,
+  IoLogoReddit
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
@@ -31,9 +36,15 @@ const Page = () => {
           align="center"
         >
           <TypewriterComponent
+            options={{ loop: true }}
             onInit={typewriter => {
               typewriter
                 .typeString(`Hi, I am a full-stack engineer based in Malaysia!`)
+                .pauseFor(2000)
+                .deleteAll()
+                .pauseFor(500)
+                .typeString(`Welcome to my online website!`)
+                .pauseFor(2000)
                 .start()
             }}
           />
@@ -158,6 +169,17 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
                   @maxlar_
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.reddit.com/user/maxlar01" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoReddit} />}
+                >
+                  @maxlar01
                 </Button>
               </Link>
             </ListItem>

@@ -66,6 +66,7 @@ const Room = () => {
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
+      controls.enablePan = false
       controls.target = target
 
       loadGLTFModel(scene, '/room.glb', {
