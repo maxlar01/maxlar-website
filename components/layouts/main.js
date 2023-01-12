@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Navbar from '../navbar'
+import NoSSR from '../no-ssr'
 import { Box, Container } from '@chakra-ui/react'
+import Room from '../room'
 
 const Main = ({ children, router }) => {
   return (
@@ -17,6 +19,9 @@ const Main = ({ children, router }) => {
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
+        <NoSSR>
+          <Room />
+        </NoSSR>
         {children}
       </Container>
     </Box>
