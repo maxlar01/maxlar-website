@@ -81,6 +81,14 @@ const Navbar = props => {
           <LinkItem href="/blog" path={path}>
             Blog
           </LinkItem>
+          <Link
+            as="a"
+            href="https://github.com/maxlar01/maxlar-website"
+            target="_blank"
+            p={2}
+          >
+            Source Code
+          </Link>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
