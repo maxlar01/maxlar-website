@@ -28,21 +28,16 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const ProjectGridItem = ({ children, title, thumbnail }) => (
+export const ProjectGridItem = ({ children, title, thumbnail, href }) => (
   <Box w="100%" align="center">
-    <LinkBox
-      as="a"
-      href="https://www.github.com"
-      target="_blank"
-      cursor="pointer"
-    >
+    <LinkBox as="a" href={href} target="_blank" cursor="pointer">
       <Image
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
         placeholder="blur"
       />
-      <LinkOverlay as="div" href="https://www.github.com">
+      <LinkOverlay as="div" href={href}>
         <Text mt={2} fontSize={20}>
           {title + ' '}
           <Icon as={IoLogoGithub} />
