@@ -13,7 +13,7 @@ const Main = ({ children, router }) => {
           rel="icon"
           href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/laptop_1f4bb.png"
         />
-        <title>Mostafa Rakha - Homepage</title>
+        {/* <title>Mostafa Rakha - Homepage</title> */}
       </Head>
 
       <Navbar path={router.asPath} />

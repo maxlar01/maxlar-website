@@ -26,7 +26,7 @@ import {
 
 const Page = () => {
   return (
-    <Layout>
+    <Layout title="Home">
       <Container>
         <Box
           borderRadius="lg"

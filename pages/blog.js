@@ -12,7 +12,7 @@ import Layout from '../components/layouts/article'
 
 const ComingSoon = () => {
   return (
-    <Layout>
+    <Layout title="Blog">
       <Container>
         <Heading as="h1">Coming soon!</Heading>
         <Text mb={4}>Stay tuned 😉</Text>
