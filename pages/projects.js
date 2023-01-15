@@ -1,8 +1,8 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
-import thumbTest from '../public/images/projects/thumbnail_test.jpg'
 import pingpongThumbnail from '../public/images/projects/pingpong-preview.jpg'
+import booksmarksApiThumbnail from '../public/images/projects/bookmarks-api-preview.jpg'
 import Layout from '../components/layouts/article'
 
 const Projects = () => {
@@ -14,9 +14,14 @@ const Projects = () => {
         </Heading>
         <SimpleGrid columns={[1, 1, 1]} gap={8}>
           <Section delay={0.2}>
-            <ProjectGridItem title="test1" thumbnail={thumbTest}>
+            <ProjectGridItem
+              title="Bookmarks API Nest.js"
+              thumbnail={booksmarksApiThumbnail}
+            >
               <br />
-              Description for project
+              This is a REST api that allows authenticated users to save their
+              favorite bookmarks ✨ in the app's database. The project is built
+              using Nest.js and Prisma.
             </ProjectGridItem>
           </Section>
           <Section delay={0.3}>
