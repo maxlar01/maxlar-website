@@ -32,8 +32,6 @@ const ComingSoon = () => {
           />
         </div>
 
-        <Divider my={6} />
-
         <Box my={6} align="center">
           <Button as={NextLink} href="/" colorScheme="teal">
             Return to home

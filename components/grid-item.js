@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { IoLogoGithub } from 'react-icons/io5'
+import { useColorModeValue } from '@chakra-ui/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" align="center">
@@ -29,7 +30,13 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const ProjectGridItem = ({ children, title, thumbnail, href }) => (
-  <Box w="100%" align="center">
+  <Box
+    w="100%"
+    align="center"
+    p={2}
+    border={`3px ${useColorModeValue('#815bd5', '#88ccca')} solid`}
+    borderRadius="lg"
+  >
     <LinkBox as="a" href={href} target="_blank" cursor="pointer">
       <Image
         src={thumbnail}
@@ -45,7 +52,6 @@ export const ProjectGridItem = ({ children, title, thumbnail, href }) => (
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
-    <Divider mt={4} />
   </Box>
 )
 
@@ -53,7 +59,7 @@ export const GridItemStyle = () => (
   <Global
     styles={`
         .grid-item-thumbnail {
-            border-radius: 12px;
+            border-radius: 15px;
         }
     `}
   />

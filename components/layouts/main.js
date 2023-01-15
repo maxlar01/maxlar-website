@@ -3,6 +3,7 @@ import Navbar from '../navbar'
 import NoSSR from '../no-ssr'
 import { Box, Container } from '@chakra-ui/react'
 import Room from '../room'
+import ParticlesEffect from '../particles'
 
 const Main = ({ children, router }) => {
   return (
@@ -13,13 +14,13 @@ const Main = ({ children, router }) => {
           rel="icon"
           href="https://emojipedia-us.s3.amazonaws.com/source/skype/289/laptop_1f4bb.png"
         />
-        {/* <title>Mostafa Rakha - Homepage</title> */}
       </Head>
 
       <Navbar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
         <NoSSR>
+          <ParticlesEffect />
           <Room />
         </NoSSR>
         {children}

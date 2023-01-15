@@ -12,7 +12,7 @@ const Projects = () => {
         <Heading as="h3" fontSize={20} mb={4}>
           Projects
         </Heading>
-        <SimpleGrid columns={[1, 1, 1]} gap={6}>
+        <SimpleGrid columns={[1, 1, 1]} gap={8}>
           <Section delay={0.2}>
             <ProjectGridItem title="test1" thumbnail={thumbTest}>
               <br />
