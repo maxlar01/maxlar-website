@@ -17,6 +17,7 @@ const Projects = () => {
             <ProjectGridItem
               title="Bookmarks API Nest.js"
               thumbnail={booksmarksApiThumbnail}
+              href="https://github.com/maxlar01/bookmarks-api-nestjs"
             >
               <br />
               This is a REST api that allows authenticated users to save their
