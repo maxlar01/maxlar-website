@@ -172,17 +172,6 @@ const Page = () => {
                 </Button>
               </Link>
             </ListItem>
-            <ListItem>
-              <Link href="https://www.reddit.com/user/maxlar01" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoReddit} />}
-                >
-                  @maxlar01
-                </Button>
-              </Link>
-            </ListItem>
           </List>
         </Section>
       </Container>
