@@ -39,7 +39,7 @@ const Page = () => {
             options={{ loop: true }}
             onInit={typewriter => {
               typewriter
-                .typeString(`Hi, I am a full-stack engineer based in Malaysia!`)
+                .typeString(`Hi, I am a full-stack engineer based in Egypt!`)
                 .pauseFor(2000)
                 .deleteAll()
                 .pauseFor(500)
