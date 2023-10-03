@@ -13,7 +13,7 @@ const NotFound = () => {
   return (
     <Container>
       <Heading as="h1">Not Found</Heading>
-      <Text mb={4}>The page you are looking for was not found.</Text>
+      <Text mb={4}>The page you are looking for was not found !</Text>
       <div
         style={{
           borderRadius: '15px',
