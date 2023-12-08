@@ -26,7 +26,7 @@ import {
 
 const Page = () => {
   return (
-    <Layout title="Home">
+    <Layout title="Home - Moustafa Rakha">
       <Container>
         <Box
           borderRadius="lg"
@@ -53,9 +53,9 @@ const Page = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Mostafa Rakha
+              Moustafa Rakha
             </Heading>
-            <p>Full-Stack Engineer</p>
+            <p>Full Stack Engineer</p>
           </Box>
         </Box>
         <Box
@@ -71,7 +71,7 @@ const Page = () => {
             maxWidth="130px"
             display="inline-block"
             borderRadius="full"
-            src="/images/profile_pic.png"
+            src="/images/profile_pic.jpg"
             alt="Profile Image"
           />
         </Box>
@@ -80,11 +80,10 @@ const Page = () => {
             Who am I?
           </Heading>
           <Paragraph>
-            Hello there 👋, I am a professional full stack engineer who likes to
+            Hello there 👋, I am a Full Stack engineer who likes to
             have fun while coding. I mainly build web apps but also like to try
             out other interesting technologies as well. I play video games and
-            watch TV shows. Feel free to contact me 💬 and I will reply when I
-            am available.
+            watch TV shows.
           </Paragraph>
           <Box align="center" my={4}>
             <Button
@@ -111,15 +110,15 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
-            Internship at Coformatique in Egypt.
+            Internship at Coformatique.
           </BioSection>
           <BioSection>
             <BioYear>2022</BioYear>
             Completed Bachelor's degree in Computer Science.
           </BioSection>
           <BioSection>
-            <BioYear>2022 - Present</BioYear>
-            Building open-source projects.
+            <BioYear>2023 - Present</BioYear>
+            Software Engineer at Megasoft IT.
           </BioSection>
         </Section>
         <Section delay={0.4}>
@@ -149,7 +148,7 @@ const Page = () => {
             </ListItem>
             <ListItem>
               <Link
-                href="https://www.linkedin.com/in/mostafa-rakha/"
+                href="https://www.linkedin.com/in/moustafa-rakha/"
                 target="_blank"
               >
                 <Button
@@ -157,7 +156,7 @@ const Page = () => {
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
-                  @mostafa-rakha
+                  @moustafa-rakha
                 </Button>
               </Link>
             </ListItem>

@@ -33,7 +33,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          Mostafa Rakha
+          Moustafa Rakha
         </Text>
       </LogoBox>
     </Link>
